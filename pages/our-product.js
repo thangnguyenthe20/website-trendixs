@@ -4,71 +4,69 @@ import { v4 } from "uuid";
 
 const products = [
   {
-    name: "Charmante hand skin softening and brightening serum",
+    name: "KASOMO Stimulating Beard & Eyebrow Growth Serum",
     image: "/image/products/product-1.jpg",
-    desc: ["Serum heals chapped skin, softens and moisturizes hands, and brightens hands.", "40ml", "Made in USA"],
-  },
-  {
-    name: "Trezzen Hair Color Improving Bar Soap",
-    image: "/image/products/product-2.jpg",
     desc: [
-      "Hair blackening soap makes hair shiny and effectively prevents dandruff, hair loss, and itching.",
-      "60g",
-      "Made in USA",
+      "Experience rapid regrowth of beards and eyebrows within weeks, enhancing sparse or short beards and eyebrows.",
     ],
   },
   {
-    name: "Melasma treatment cream",
+    name: "KASOMO hair loss, itchy and dandruff shampoo",
+    image: "/image/products/product-2.jpg",
+    desc: ["Decrease hair loss and breakage while preventing the recurrence of dandruff. "],
+  },
+  {
+    name: "Morri Glow Renewal Exfoliating Gel",
     image: "/image/products/product-3.jpg",
     desc: [
-      "The moisturizer deeply hydrates and fades dark spots, pigmentation, and redness while soothing irritation with pro-retinol.",
-      "30g",
-      "Made in USA",
+      "Regular usage offers a gentle exfoliation, encouraging a more radiant and even complexion, while also providing hydration and softness to the skin.",
     ],
+  },
+  {
+    name: "Trezzen Grey Hair Removal Bar Soap",
+    image: "/image/products/product-4.jpg",
+    desc: ["With each wash, it reduces the appearance of grey tones and enhances hair thickness by up to 98%."],
+  },
+  {
+    name: "Berari Vein Recovery Balm",
+    image: "/image/products/product-5.jpg",
+    desc: [
+      "Effectively reduce the appearance of spider veins and broken blood vessels, strengthen veins, and improve vein wall function, resulting in a noticeable decrease in unsightly spider veins.",
+    ],
+  },
+  {
+    name: "HolySmile Teeth Whitening",
+    image: "/image/products/product-6.jpg",
+    desc: ["Banish yellow undertones from your teeth, revealing a brighter, more radiant smile."],
+  },
+  {
+    name: "Air Cushion CC Cream | Mushroom Head Foundation",
+    image: "/image/products/product-7.jpg",
+    desc: ["CC Cream Foundation provides full coverage, evens out skin tone, and is suitable for all skin types."],
+  },
+  {
+    name: "Charmante Hands Hydration Gel",
+    image: "/image/products/product-8.jpg",
+    desc: ["Protect your hands from environmental and household stressors, leaving your skin smooth and rejuvenated."],
   },
   {
     name: "KASOMO Boosting Hair And Eyebrow Growth Serum",
-    image: "/image/products/product-4.webp",
+    image: "/image/products/product-9.jpg",
     desc: [
-      "Revitalize your scalp, repair damage, and trigger cell renewal for denser hair and eyebrow growth.",
-      "400ml",
-      "Made in USA",
+      "Revive your scalp, mend damage, and stimulate cell regeneration to promote thicker hair and eyebrow growth.",
     ],
   },
   {
     name: "KASOMO Nourishing Hair Repair Mask",
-    image: "/image/products/product-5.jpg",
-    desc: ["An ideal therapy for damaged, unruly hair, effortlessly restore smoothness", "300ml", "Made in USA"],
-  },
-  {
-    name: "HolySmile Teeth Color Improving Toothpaste",
-    image: "/image/products/product-6.jpg",
-    desc: [
-      "To brighten and increase the brightness of your smile, cover up any yellow tones in your teeth",
-      "30ml",
-      "Made in USA",
-    ],
-  },
-  {
-    name: "Berari Vein Blurring Lotion",
-    image: "/image/products/product-7.png",
-    desc: [
-      "Minimize the visibility of spider and varicose veins; lessen discomfort and edema; enhances blood flow",
-      "30ml",
-      "Made in USA",
-    ],
-  },
-  {
-    name: "Morri body exfoliating lotion",
-    image: "/image/products/product-8.jpg",
-    desc: ["The cream removes blemishes, dullness, blemishes and brightens your skin.", "100ml", "Made in USA"],
+    image: "/image/products/product-10.jpg",
+    desc: ["The perfect solution for damaged, unruly hair, effortlessly restoring smoothness."],
   },
 ];
 
 const OurProduct = () => {
   return (
     <div className="px-3 py-6 lg:px-16 sm:px-6 sm:py-8 lg:py-10">
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 md:gap-4 xl:gap-6">
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 md:gap-4 xl:gap-6">
         {products.map(({ name, image, desc }) => (
           <div key={v4()} className="flex flex-col overflow-hidden rounded shadow">
             <img src={image} alt="product" className="aspect-square" />

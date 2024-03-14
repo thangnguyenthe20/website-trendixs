@@ -7,17 +7,16 @@ const Services = () => {
     <>
       <div className="relative w-full min-h-screen">
         <Image
-          src="/image/banners/banner-3.jpg"
-          alt="zetifly"
+          src="/image/banners/banner-3.png"
+          alt="trendixs"
           fill
           className="object-cover object-center w-full h-full -z-10 brightness-[0.85]"
         />
         <div className={`absolute inset-0 flex justify-center items-center`}>
           <div className="w-full sm:w-[550px] flex justify-center items-center flex-col lg:gap-9 gap-4">
-            <h3 className="text-white uppercase text-heading">zetifly</h3>
+            <h3 className="text-white uppercase text-heading">trendixs</h3>
             <p className="leading-6 text-center text-white">
-              We will give you the necessary social media marketing solutions: Mobile Marketing; Video Marketing;
-              Content Marketing
+              We specialize in delivering digital marketing solutions as an agency.
             </p>
           </div>
         </div>
@@ -25,12 +24,12 @@ const Services = () => {
       <ProductLayout />
       <div className="container max-w-[1200px] 2xl:max-w-[1600px] pt-0 flex justify-between md:flex-row flex-col gap-8 2xl:gap-16">
         <ProductAds
-          image="/image/services/service-4.jpg"
-          content="We have provided Marketing support to more than 17,000 businesses in many different industries to significantly increase their revenue over the years."
+          image="/image/services/service-6.png"
+          content="Your success is integral to our own. At TRENDIXS, we are dedicated to achieving customer success as our primary objective."
         />
         <ProductAds
-          image="/image/services/service-5.jpg"
-          content="In 2023, we added 3,000 new customers and helped them achieve profits beyond their target."
+          image="/image/services/service-7.png"
+          content="Ensures a threefold increase in sales and a fivefold optimization in costs for customers."
         />
       </div>
     </>

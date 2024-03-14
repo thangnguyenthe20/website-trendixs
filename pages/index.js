@@ -5,39 +5,39 @@ import classnames from "classnames";
 
 const users = [
   {
-    name: "James Anderson",
+    name: "Sarah Johnson",
     comment:
-      "The team's professionalism and in-depth knowledge of the business have been crucial in developing an effective marketing plan. They have a thorough understanding of our industry.",
-    image: "/image/users/user-1.jpg",
+      "I have to say, working with this marketing company has been refreshing. Their honesty and transparency set them apart from others in the industry.",
+    image: "/image/users/user-1.png",
     rating: 5,
   },
   {
-    name: "Ethan Nguyen",
+    name: "Michael Smith",
     comment:
-      "I'm impressed with their tailored approach, always adapting to our unique needs. Their flexibility and outstanding customer support make them a standout choice.",
-    image: "/image/users/user-2.jpg",
+      "I'm impressed by the genuine approach of the marketing team. Their feedback is always insightful and straightforward, which has greatly benefited our campaigns.",
+    image: "/image/users/user-2.png",
     rating: 5,
   },
   {
-    name: "Liam Walker",
+    name: "Emily Brown",
     comment:
-      "For the past three months, I have collaborated with Zetifly. The revenue grew by 30% in the previous quarter. aspire to become more powerful soon.",
-    image: "/image/users/user-3.jpg",
+      "I appreciate the authenticity of the marketing company. They don't just promise results; they deliver with integrity and reliability.",
+    image: "/image/users/user-3.png",
     rating: 5,
   },
   {
-    name: "Olivia Taylor",
+    name: "David Wilson",
     comment:
-      "It is admirable how open and understandable their reporting and measurement are. Beyond just looking good on paper, their marketing services actually add real value to our company's expansion.",
-    image: "/image/users/user-4.jpg",
+      "In my experience, this marketing firm stands out for their candid feedback and genuine interest in our success. It's been a pleasure collaborating with them.",
+    image: "/image/users/user-4.png",
     rating: 5,
   },
   {
-    name: "Ava Mitchell",
+    name: "Jessica Taylor",
     comment:
-      "They provide a revolutionary marketing service. Their creative approaches have produced impressive outcomes.",
-    image: "/image/users/user-5.jpg",
-    rating: 5,
+      "The marketing team's honesty and authenticity make them a valuable partner. They provide constructive criticism and innovative ideas that have had a positive impact on our business.",
+    image: "/image/users/user-5.png",
+    rating: 4,
   },
 ];
 
@@ -45,15 +45,19 @@ export default function Home() {
   return (
     <div>
       <div className="relative w-full min-h-screen">
-        <video className="w-full h-full brightness-90" autoPlay={true} muted loop>
-          <source src="/image/banners/banner-0.mp4" type="video/mp4"></source>
-        </video>
+        <div className="absolute inset-0">
+          <Image
+            src="/image/banners/banner-0.png"
+            alt="trendixs"
+            fill
+            className="object-cover object-top w-full h-full -z-10 brightness-[0.9]"
+          />
+        </div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="w-full sm:w-[500px] flex justify-center items-center flex-col lg:gap-9 gap-4">
-            <h3 className="text-white uppercase text-heading">zetifly</h3>
+            <h3 className="text-white uppercase text-heading">trendixs</h3>
             <p className="leading-6 text-center text-white">
-              Marketing is not just about talking about the product, but also about creating an emotional experience for
-              the customer
+              We specialize in offering digital marketing solutions as an agency.
             </p>
           </div>
         </div>
@@ -61,8 +65,8 @@ export default function Home() {
       <div className="relative w-full min-h-screen">
         <div className="absolute inset-0">
           <Image
-            src="/image/banners/banner-1.jpg"
-            alt="zetifly"
+            src="/image/banners/banner-1.png"
+            alt="trendixs"
             fill
             className="object-cover object-top w-full h-full -z-10 brightness-[0.9]"
           />
@@ -72,8 +76,8 @@ export default function Home() {
             <div className="flex items-center justify-center w-full h-full px-8 pt-16 lg:px-6 sm:p-16">
               <div className="w-full sm:w-[600px] flex justify-center items-center lg:text-start text-center flex-col gap-9">
                 <p className="px-8 text-2xl text-center text-white sm:px-0">
-                  Our Online Marketing solutions will satisfy these requirements: lower expenses, increase revenue, and
-                  boost profits.
+                  Embracing the latest trend in marketing, digital marketing offers innovative avenues to boost sales
+                  and streamline costs. Our commitment is to deliver top-notch solutions tailored to your needs.
                 </p>
                 <Link href="/our-services" className="block text-white tracking-[1px] w-fit pb-2">
                   <button className="btn btn-primary w-fit">OUR SERVICES</button>
@@ -86,8 +90,8 @@ export default function Home() {
       <div className="relative w-full min-h-screen">
         <div className="absolute inset-0">
           <Image
-            src="/image/banners/banner-2.jpg"
-            alt="zetifly"
+            src="/image/banners/banner-2.png"
+            alt="trendixs"
             fill
             className="object-cover object-center w-full h-full -z-10 brightness-[0.9]"
           />
@@ -97,7 +101,7 @@ export default function Home() {
             <div className="flex items-center justify-center w-full h-full px-8 pt-16 lg:px-6 sm:p-16">
               <div className="w-full sm:w-[600px] flex justify-center items-center lg:text-start text-center flex-col gap-9">
                 <p className="px-8 text-2xl text-center text-white sm:px-0">
-                  Togetherness is strength; amazing things are possible when people work together as a team.
+                  Our team comprises professionals with over a decade of expertise in this domain.
                 </p>
                 <Link href="/about" className="block text-white tracking-[1px] w-fit pb-2">
                   <button className="btn btn-primary w-fit">ABOUT US</button>
